@@ -5,3 +5,7 @@
 /cleaned_events.csv
 /cleaned_item_properties.csv
 als_model.pkl
+chunked_item_properties.csv
+merged_chunked_item_properties.csv
+
+
