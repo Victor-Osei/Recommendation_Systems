@@ -8,3 +8,4 @@ als_model.pkl
 chunked_item_properties.csv
 merged_chunked_item_properties_events.csv
 cleaned_event.csv
+merged_events_item_properties_dask.csv
