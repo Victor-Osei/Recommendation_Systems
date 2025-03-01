@@ -13,3 +13,4 @@ cleaned_merged_events_item_properties.csv
 feature_engineered_dataset.csv
 events_with_time_features.csv
 events_with_user_features.csv
+events_with_interaction_features.csv
