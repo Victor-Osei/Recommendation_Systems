@@ -5,7 +5,7 @@
 /cleaned_events.csv
 /cleaned_item_properties.csv
 als_model.pkl
-chunked_item_properties.csv
+chunked_item_properties.csv 
 merged_chunked_item_properties_events.csv
 cleaned_event.csv
 merged_events_item_properties_dask.csv
@@ -27,3 +27,6 @@ merged_events_with_item_properties_09.csv
 merged_events_with_item_properties_10.csv
 merged_events_with_item_properties_11.csv
 merged_events_with_item_properties_12.csv
+user_activity_with_anomalies.csv
+user_activity.csv
+cleaned_events_no_anomalies_0.csv
