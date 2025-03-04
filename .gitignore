@@ -30,3 +30,8 @@ merged_events_with_item_properties_12.csv
 user_activity_with_anomalies.csv
 user_activity.csv
 cleaned_events_no_anomalies_0.csv
+idx2item.pkl
+item_factors.pkl
+svd_model.pkl
+user_factors.pkl
+user2idx.pkl
