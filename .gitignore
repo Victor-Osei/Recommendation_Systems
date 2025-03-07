@@ -35,3 +35,5 @@ item_factors.pkl
 svd_model.pkl
 user_factors.pkl
 user2idx.pkl
+item_content_features.csv
+train_events_with_content.csv
