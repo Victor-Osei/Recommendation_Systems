@@ -2,13 +2,19 @@ import streamlit as st
 import pickle
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
-
+import joblib
 # Load the saved hybrid model (cache it to speed up subsequent loads)
+
 @st.cache_data
 def load_hybrid_model():
-    with open("hybrid_model.pkl", "rb") as f:
-        model = pickle.load(f)
+    model = joblib.load("hybrid_model.pkl")
     return model
+
+# model = load_hybrid_model()
+# # def load_hybrid_model():
+# #     with open("hybrid_model.pkl", "rb") as f:
+# #         model = pickle.load(f)
+# #     return model
 
 model = load_hybrid_model()
 alpha = model["alpha"]
@@ -20,7 +26,7 @@ item_content_dict = model["item_content_dict"]
 user_profiles = model["user_profiles"]
 onehot_cols = model["onehot_cols"]
 
-st.title("Hybrid Recommendation System")
+st.title("The Recommendation System")
 
 def hybrid_recommend_for_user(user_id, top_n=10):
     # Collaborative Filtering (CF) component
