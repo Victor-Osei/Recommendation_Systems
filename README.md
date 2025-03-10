@@ -80,7 +80,7 @@ This cleaning step ensured that only high-quality, representative data was used 
 
 **4.2 Recommendation System Model**
 
-**Collaborative Filtering:**
+**Collaborative Filtering(CF):**
 
 - - Technique: Truncated SVD (Matrix Factorization) was used to decompose the sparse user–item interaction matrix into latent factors.
 
@@ -88,13 +88,14 @@ This cleaning step ensured that only high-quality, representative data was used 
 user_factors and item_factors are the latent representations of users and items, respectively.
 Mappings (user2idx, idx2item) facilitate conversion between original IDs and matrix indices.
 
-**Content-Based Filtering:**
+**Content-Based Filtering(CBF):**
 
 - - Item Content Features: Reduced item content features were created using one-hot encoding for top item property categories.
 
 * - User Profiles: User content profiles were built by averaging one-hot vectors from the items each user interacted with.
 
-Hybrid Model:
+**4.3 Hybrid Model:**
+
 The final recommendation system combines CF and CBF signals using a weighted average controlled by parameter α.
 The tuned value of α (e.g., 0.7) reflects the optimal balance between collaborative filtering and content-based filtering.
 
