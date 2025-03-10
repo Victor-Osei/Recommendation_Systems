@@ -3,6 +3,7 @@ import pickle
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import joblib
+
 # Load the saved hybrid model (cache it to speed up subsequent loads)
 
 @st.cache_data
@@ -10,11 +11,7 @@ def load_hybrid_model():
     model = joblib.load("hybrid_model.pkl")
     return model
 
-# model = load_hybrid_model()
-# # def load_hybrid_model():
-# #     with open("hybrid_model.pkl", "rb") as f:
-# #         model = pickle.load(f)
-# #     return model
+
 
 model = load_hybrid_model()
 alpha = model["alpha"]
