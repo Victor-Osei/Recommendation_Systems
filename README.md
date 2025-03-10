@@ -31,31 +31,42 @@ Contains over 20 million rows describing 417,053 unique items with time-dependen
 
 - Category Tree: category_tree.csv
 Provides hierarchical relationships between item categories.
-Data Preprocessing:
 
-Hashing and Normalization:
+
+**Data Preprocessing:**
+
+- Hashing and Normalization:
 All values (except for categoryid and available) were hashed and normalized (with stemming applied) to ensure confidentiality.
-Time-Based Feature Extraction:
-Extracted features such as hour, day of week, and month from timestamps.
-Bot Detection:
-Applied anomaly detection to identify and remove abnormal (bot) users.
-Merging Datasets:
-Merged events data with item properties and category tree data for enriched feature sets.
-Dimensionality Reduction:
-Reduced the number of unique item properties (via frequency filtering and grouping low-frequency values into "Other") before one-hot encoding.
-3. Data Preparation
-Preprocessing Steps:
 
-Missing Value Handling:
+- Time-Based Feature Extraction:
+Extracted features such as hour, day of week, and month from timestamps.
+
+- Bot Detection:
+Applied anomaly detection to identify and remove abnormal (bot) users.
+
+- Merging Datasets:
+Merged events data with item properties and category tree data for enriched feature sets.
+
+- Dimensionality Reduction:
+Reduced the number of unique item properties (via frequency filtering and grouping low-frequency values into "Other") before one-hot encoding.
+
+## 3. Data Preparation
+**Preprocessing Steps:**
+
+- Missing Value Handling:
 Missing values in the transactionid, timestamp_y, property, and value columns were handled appropriately (e.g., by filling with "Unknown" or dropping if necessary).
-Duplicate Removal:
+
+- Duplicate Removal:
 Duplicate rows were identified and removed to ensure data quality.
-Feature Engineering:
+
+- Feature Engineering:
 Created aggregated user features (e.g., total events, session length) for anomaly detection.
 Built content profiles for users by averaging the one-hot encoded item content vectors.
-Sparse Matrix Construction:
+
+- Sparse Matrix Construction:
 Constructed a sparse user–item interaction matrix to support collaborative filtering using SVD.
-4. Modeling
+
+## 4. Modeling
 4.1 Anomaly Detection Model
 Approach:
 
