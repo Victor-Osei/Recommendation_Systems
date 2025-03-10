@@ -67,31 +67,37 @@ Built content profiles for users by averaging the one-hot encoded item content v
 Constructed a sparse user–item interaction matrix to support collaborative filtering using SVD.
 
 ## 4. Modeling
-4.1 Anomaly Detection Model
-Approach:
+ **4.1 Anomaly Detection Model**
+- Approach:
 
 Aggregated user-level features (e.g., event count, session duration) and used the Isolation Forest algorithm to identify anomalous user behavior.
 Removed abnormal users (potential bots) from the training data.
-Evaluation:
+
+- Evaluation:
 
 Anomalies were evaluated using visualizations (histograms, boxplots) comparing normal versus anomalous user behavior.
 This cleaning step ensured that only high-quality, representative data was used in the recommendation model.
-4.2 Recommendation System Model
-Collaborative Filtering:
 
-Technique: Truncated SVD (Matrix Factorization) was used to decompose the sparse user–item interaction matrix into latent factors.
-Components:
+**4.2 Recommendation System Model**
+
+**Collaborative Filtering:**
+
+- - Technique: Truncated SVD (Matrix Factorization) was used to decompose the sparse user–item interaction matrix into latent factors.
+
+- - Components:
 user_factors and item_factors are the latent representations of users and items, respectively.
 Mappings (user2idx, idx2item) facilitate conversion between original IDs and matrix indices.
-Content-Based Filtering:
 
-Item Content Features:
-Reduced item content features were created using one-hot encoding for top item property categories.
-User Profiles:
-User content profiles were built by averaging one-hot vectors from the items each user interacted with.
+**Content-Based Filtering:**
+
+- - Item Content Features: Reduced item content features were created using one-hot encoding for top item property categories.
+
+* - User Profiles: User content profiles were built by averaging one-hot vectors from the items each user interacted with.
+
 Hybrid Model:
 The final recommendation system combines CF and CBF signals using a weighted average controlled by parameter α.
 The tuned value of α (e.g., 0.7) reflects the optimal balance between collaborative filtering and content-based filtering.
+
 5. Evaluation
 Metrics Used:
 
