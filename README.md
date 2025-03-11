@@ -99,26 +99,35 @@ Mappings (user2idx, idx2item) facilitate conversion between original IDs and mat
 The final recommendation system combines CF and CBF signals using a weighted average controlled by parameter α.
 The tuned value of α (e.g., 0.7) reflects the optimal balance between collaborative filtering and content-based filtering.
 
-5. Evaluation
-Metrics Used:
+## 5. Evaluation
+**Metrics Used:**
 
-Precision@K & Recall@K:
+- Precision@K & Recall@K:
 These metrics measure the quality of the top-K recommendations.
-MAP (Mean Average Precision):
+
+- MAP (Mean Average Precision):
 Captures ranking quality by considering the order of relevant items.
-Baseline Performance:
+
+- Baseline Performance:
 The pure CF model achieved Mean Precision@10 ≈ 0.0056 and Mean Recall@10 ≈ 0.0455.
-Hybrid Model Performance:
+
+- Hybrid Model Performance:
 Hyperparameter tuning of the hybrid model indicated improved performance with an optimal α around 0.7, with Precision@10 and Recall@10 plateauing at their best values.
-Visualization:
+
+**Visualization:**
 
 Graphs were generated to show:
-The distribution of events by type.
-Conversion rates between events.
-Temporal variations in user behavior.
-Evaluation metrics across different α values.
-6. Deployment
-Streamlit App:
+
+* The distribution of events by type.
+
+* Conversion rates between events.
+
+* Temporal variations in user behavior.
+
+* Evaluation metrics across different α values.
+
+## 6. Deployment
+**Streamlit App:**
 
 A Streamlit dashboard was developed to allow interactive recommendations.
 Users can input a user ID to receive top-N recommendations based on the hybrid model.
