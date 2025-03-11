@@ -100,9 +100,6 @@ The tuned value of α (e.g., 0.7) reflects the optimal balance between collabora
 - Precision@K & Recall@K:
 These metrics measure the quality of the top-K recommendations.
 
-- MAP (Mean Average Precision):
-Captures ranking quality by considering the order of relevant items.
-
 - Baseline Performance:
 The pure CF model achieved Mean Precision@10 ≈ 0.0056 and Mean Recall@10 ≈ 0.0455.
 
