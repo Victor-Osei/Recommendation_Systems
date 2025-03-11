@@ -153,4 +153,4 @@ Link :
 
 ## 8. Conclusion
 
-This project demonstrates a full end-to-end process—from data understanding and preprocessing through to modeling, evaluation, and deployment—using the CRISP-DM framework. The hybrid recommendation system leverages both user behavior and rich item features to provide better recommendations, and it has been thoroughly evaluated and deployed for interactive use.
+This project demonstrates a full end-to-end process from data understanding and preprocessing through to modeling, evaluation, and deployment using the CRISP-DM framework. The hybrid recommendation system leverages both user behavior and rich item features to provide better recommendations, and it has been thoroughly evaluated and deployed for interactive use.
