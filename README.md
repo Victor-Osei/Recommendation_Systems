@@ -13,12 +13,7 @@ This project builds a recommendation system for an e-commerce website using impl
 - Task 1: Predict product properties for "add-to-cart" events using data from "view" events.
 - Task 2: Identify and remove abnormal users (bots) that add noise and bias to the system.
 
-Impact:
-
-Improve recommendation accuracy and user experience.
-Enhance operational efficiency by filtering out non-genuine traffic.
-Enable better marketing and inventory decisions based on user behavior insights.
-
+ 
 ## **2. Data Understanding**
 **Data Sources**
 
@@ -154,6 +149,8 @@ The hybrid model's optimal α (~0.7) shows that collaborative filtering is the p
 The final system is deployed via Streamlit, offering real-time, interactive recommendations.
 The project setup allows for future refinements, periodic retraining, and scalability.
 
-## Conclusion
+Link : 
+
+## 8. Conclusion
 
 This project demonstrates a full end-to-end process—from data understanding and preprocessing through to modeling, evaluation, and deployment—using the CRISP-DM framework. The hybrid recommendation system leverages both user behavior and rich item features to provide better recommendations, and it has been thoroughly evaluated and deployed for interactive use.
