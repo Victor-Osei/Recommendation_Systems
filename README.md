@@ -132,18 +132,28 @@ Graphs were generated to show:
 A Streamlit dashboard was developed to allow interactive recommendations.
 Users can input a user ID to receive top-N recommendations based on the hybrid model.
 The model components (latent factors, mappings, content profiles) are loaded from saved pickle files (or joblib files with compression) to ensure efficient performance.
-7. Final Insights
-Data Insights:
+
+## 7. Final Insights
+**Data Insights:**
+
 The dataset is heavily skewed toward view events, with much lower rates of add-to-cart and transaction events.
 Time-based analyses reveal peak activity periods that can inform personalized marketing strategies.
-Modeling Insights:
+
+**Modeling Insights:**
+
 Anomaly detection was crucial to filter out bots and noisy data.
 The collaborative filtering baseline provided a starting point, but the addition of content-based signals (hybrid model) improved recommendation quality.
-Evaluation Insights:
+
+**Evaluation Insights:**
+
 Although absolute metrics (Precision@K, Recall@K) are low, they are typical for implicit feedback datasets.
 The hybrid model's optimal α (~0.7) shows that collaborative filtering is the primary driver, but content features add valuable context.
-Deployment:
+
+**Deployment:**
+
 The final system is deployed via Streamlit, offering real-time, interactive recommendations.
 The project setup allows for future refinements, periodic retraining, and scalability.
-Conclusion
+
+## Conclusion
+
 This project demonstrates a full end-to-end process—from data understanding and preprocessing through to modeling, evaluation, and deployment—using the CRISP-DM framework. The hybrid recommendation system leverages both user behavior and rich item features to provide better recommendations, and it has been thoroughly evaluated and deployed for interactive use.
