@@ -151,7 +151,10 @@ App Link : https://victor-osei-recommendation-systems-rsapp-jvr8qi.streamlit.app
 
 PowerPoint Presentation Link : https://docs.google.com/presentation/d/1Tu0BeE6dVj0JGAV6NHb3yYLf69Y2vvZN/edit?usp=sharing&ouid=108504450165081332340&rtpof=true&sd=true 
 
+
 ## 8. Conclusion
 
 This project demonstrates a full end-to-end process from data understanding and preprocessing through to modeling, evaluation, and deployment using the CRISP-DM framework. The hybrid recommendation system leverages both user behavior and rich item features to provide better recommendations, and it has been thoroughly evaluated and deployed for interactive use.
 
+Published on Medium : 
+https://medium.com/@oseivictor10/building-a-recommendation-system-0dc71687f2e1 
