@@ -146,7 +146,8 @@ The hybrid model's optimal α (~0.7) shows that collaborative filtering is the p
 The final system is deployed via Streamlit, offering real-time, interactive recommendations.
 The project setup allows for future refinements, periodic retraining, and scalability.
 
-Link : 
+Link : https://victor-osei-recommendation-systems-rsapp-jvr8qi.streamlit.app/ 
+
 
 ## 8. Conclusion
 
