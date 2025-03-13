@@ -11,3 +11,4 @@ dask
 implicit
 streamlit
 wheel
+gdown
