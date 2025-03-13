@@ -146,9 +146,12 @@ The hybrid model's optimal α (~0.7) shows that collaborative filtering is the p
 The final system is deployed via Streamlit, offering real-time, interactive recommendations.
 The project setup allows for future refinements, periodic retraining, and scalability.
 
-Link : https://victor-osei-recommendation-systems-rsapp-jvr8qi.streamlit.app/ 
+App Link : https://victor-osei-recommendation-systems-rsapp-jvr8qi.streamlit.app/ 
 
+
+PowerPoint Presentation Link : https://docs.google.com/presentation/d/1Tu0BeE6dVj0JGAV6NHb3yYLf69Y2vvZN/edit?usp=sharing&ouid=108504450165081332340&rtpof=true&sd=true 
 
 ## 8. Conclusion
 
 This project demonstrates a full end-to-end process from data understanding and preprocessing through to modeling, evaluation, and deployment using the CRISP-DM framework. The hybrid recommendation system leverages both user behavior and rich item features to provide better recommendations, and it has been thoroughly evaluated and deployed for interactive use.
+
