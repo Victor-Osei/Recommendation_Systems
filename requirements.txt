@@ -4,7 +4,7 @@ scikit-learn
 scipy
 matplotlib
 seaborn
-lightfm==1.17
+lightfm
 streamlit
 plotly
 dask
