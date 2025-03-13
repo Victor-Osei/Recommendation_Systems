@@ -4,9 +4,10 @@ scikit-learn
 scipy
 matplotlib
 seaborn
-lightfm
+lightfm==1.17
 streamlit
 plotly
 dask
 implicit
 streamlit
+wheel
